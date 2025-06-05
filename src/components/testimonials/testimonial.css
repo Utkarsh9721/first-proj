@@ -1,0 +1,151 @@
+.testimonials-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;.testimonials {
+  margin: 80px auto;
+  padding: 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.next-btn,
+.back-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #212EA0;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.next-btn:hover,
+.back-btn:hover {
+  background: #1a218d;
+}
+
+.back-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider ul {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 400%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slider li {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.user-info img {
+  max-width: 520px;
+  height: 520px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.user-info img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.back-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.user-info {
+  text-align: center;
+  padding: 20px;
+}
+.testimonials-container{
+  width: 100%;
+}

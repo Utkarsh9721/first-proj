@@ -1,0 +1,123 @@
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Container */
+nav {
+  width: 100%;
+  background-color: transparent;
+  padding: 8px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Logo */
+nav img.logo {
+  height: 70px;
+  width: auto;
+}
+
+/* Nav Links */
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  margin: 5px 20px;
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #ffcc00;
+}
+
+nav ul li .btn {
+  background-color: #ffcc00;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #212EA0;
+  font-weight: bold;
+}
+
+nav ul li .btn:hover {
+  background-color: #fff;
+  color: #212EA0;
+}
+
+/* Dark Sticky Nav */
+.dark-nav {
+  background-color: #212EA0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Responsive Nav Menu (Mobile) */
+@media (max-width: 840px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background-color: #212EA0;
+    padding-top: 80px;
+    padding-left: 30px;
+    transition: right 0.4s ease-in-out;
+    z-index: 999;
+  }
+
+  nav ul.open {
+    right: 0;
+  }
+
+  nav ul li {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Medium Screens Adjustments */
+@media (max-width: 1200px) {
+  nav ul li {
+    margin: 10px 15px;
+    font-size: 16px;
+  }
+
+  nav img.logo {
+    height: 60px;
+  }
+}
